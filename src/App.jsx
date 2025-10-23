@@ -2,6 +2,7 @@ import "./App.css";
 import { Badge } from "./components/badge/Badge";
 import { Banner } from "./components/banner/Banner";
 import { Card } from "./components/card/Card";
+import { Testimonial } from "./components/testimonial/Testimonial";
 
 function App() {
   return (
@@ -87,6 +88,14 @@ function App() {
             hovered={true}
           />
         </div>
+      </section>
+      <section>
+        <h2>Testimonial</h2>
+        <Testimonial
+          quote="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna nulla vitae laoreet augue. Amet feugiat est integer dolor auctor adipiscing nunc urna, sit."
+          name="May Andersons"
+          business="Workcation, CTO"
+        />
       </section>
     </>
   );
