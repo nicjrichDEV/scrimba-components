@@ -1,6 +1,7 @@
 import "./App.css";
 import { Badge } from "./components/badge/Badge";
 import { Banner } from "./components/banner/Banner";
+import { Card } from "./components/card/Card";
 
 function App() {
   return (
@@ -70,6 +71,20 @@ function App() {
           <Banner
             title="There is a problem with your application!"
             status="error"
+          />
+        </div>
+      </section>
+      <section>
+        <h2>Card</h2>
+        <div className="cards">
+          <Card
+            title="Easy Deployment"
+            description="Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis."
+          />
+          <Card
+            title="Easy Deployment"
+            description="Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis."
+            hovered={true}
           />
         </div>
       </section>

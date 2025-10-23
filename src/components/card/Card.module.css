@@ -1,0 +1,62 @@
+.card {
+  background-color: #f9fafb;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  padding: 56px 24px 32px 24px;
+  align-items: center;
+  gap: 32px;
+  align-self: stretch;
+  position: relative;
+  max-width: 336px;
+  will-change: transform;
+  transition: box-shadow 250ms ease-in;
+
+  svg {
+    stroke: white;
+  }
+}
+
+.card:hover {
+  box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.1);
+}
+
+.card[data-hovered="true"] {
+  box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.1);
+}
+
+.icon {
+  width: 48px;
+  height: 48px;
+  background-color: #3f75fe;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  position: absolute;
+  top: -24px;
+}
+
+.copy {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  h4 {
+    color: #111827;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+  }
+
+  p {
+    color: #6b7280;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+}
