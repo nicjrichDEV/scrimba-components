@@ -1,0 +1,91 @@
+/* Base Banner */
+.banner {
+  border-radius: 6px;
+  padding: 16px;
+  display: flex;
+  gap: 12px;
+  align-items: start;
+}
+
+/* Title */
+.copy {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  h4 {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+  }
+}
+
+p {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+/* Status */
+.neutral {
+  background-color: #eff6ff;
+
+  h4 {
+    color: #1e40af;
+  }
+
+  p {
+    color: #1c51b9;
+  }
+
+  svg {
+    fill: #60a5fa;
+  }
+}
+
+.success {
+  background-color: #ecfdf5;
+
+  h4 {
+    color: #065f46;
+  }
+
+  p {
+    color: #047857;
+  }
+
+  svg {
+    fill: #10b981;
+  }
+}
+
+.warning {
+  background-color: #fffbeb;
+
+  h4 {
+    color: #92400e;
+  }
+
+  p {
+    color: #b45309;
+  }
+
+  svg {
+    fill: #f59e0b;
+  }
+}
+
+.error {
+  background-color: #fef2f2;
+
+  h4 {
+    color: #991b1b;
+  }
+
+  p {
+    color: #b91c1c;
+  }
+
+  svg {
+    fill: #ef4444;
+  }
+}
