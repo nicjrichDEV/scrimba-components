@@ -1,6 +1,7 @@
 import styles from "./Testimonial.module.css";
 import WorkcationLogo from "../../assets/workcation-logo.svg";
 import { cn } from "../../utilities/cn";
+import { Quote } from "lucide-react";
 
 export const Testimonial = ({
   variant = "no-picture",
@@ -9,20 +10,24 @@ export const Testimonial = ({
   name,
   business,
 }) => {
-  const testimonialClasses = cn(
-    styles.Testimonial,
-    styles[picture],
-    styles["no-picture"]
-  );
+  const testimonialClasses = cn(styles.Testimonial, styles[variant]);
 
   return (
     <div className={testimonialClasses}>
-      {variant === "picture" && <img src={picture} />}
-      {variant === "no-picture" && <img src={WorkcationLogo} />}
-      <h2>{quote}</h2>
-      <div className={styles.bio}>
-        <h6>{name}</h6>
-        <p>{business}</p>
+      <div className={styles["image-wrapper"]}>
+        {variant === "picture" ? (
+          <img src={picture} />
+        ) : (
+          <img src={WorkcationLogo} />
+        )}
+      </div>
+      {variant === "picture" && <Quote />}
+      <div className={styles["copy-wrapper"]}>
+        <h2>{quote}</h2>
+        <div className={styles.bio}>
+          <h6>{name}</h6>
+          <p>{business}</p>
+        </div>
       </div>
     </div>
   );

@@ -1,0 +1,192 @@
+/* No Picture */
+.no-picture {
+  background-color: #f9fafb;
+  padding: 74px 16px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  h2 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    margin-top: 40px;
+    border: unset;
+    z-index: 1;
+  }
+
+  h2::before {
+    content: open-quote;
+  }
+
+  h2::after {
+    content: close-quote;
+  }
+
+  .image-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .copy-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  h6 {
+    font-weight: 500;
+    color: #111827;
+  }
+
+  p {
+    color: #6b7280;
+  }
+}
+
+.no-picture::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 135px;
+  width: 202px;
+  background-image: url("../../assets/dot-pattern.svg");
+  background-size: auto;
+  background-repeat: repeat;
+  background-position: bottom left;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Picture  */
+.picture {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: #2e59f3;
+  position: relative;
+  padding-bottom: 64px;
+
+  .image-wrapper {
+    padding: 0 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .copy-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .image-wrapper::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 100px;
+    width: 100%;
+    background-color: white;
+    z-index: 0;
+  }
+
+  svg {
+    margin-top: 48px;
+    width: 48px;
+    height: 48px;
+    stroke: #ffffff40;
+    margin-left: 16px;
+  }
+
+  h2 {
+    margin-top: 24px;
+    border: unset;
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+    padding: 0 16px;
+  }
+
+  img {
+    width: 334px;
+    height: 206px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+      0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    z-index: 1;
+  }
+
+  .bio {
+    padding: 0 16px;
+  }
+
+  h6 {
+    color: white;
+    font-weight: 700;
+    line-height: 24px;
+    font-size: 16px;
+  }
+
+  p {
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .no-picture {
+    text-align: center;
+    padding: 96px 40px;
+    align-items: center;
+    /* max-width: 1200px;  Not sure if we want the dots to be anchored to the text or not */
+
+    h2 {
+      max-width: 768px;
+    }
+
+    .bio {
+      margin-top: 32px;
+      display: flex;
+      align-items: baseline;
+      justify-content: center;
+      gap: 4px;
+    }
+
+    h6::after {
+      content: "/";
+      font-size: 20px;
+      color: #2e59f3;
+      padding-left: 4px;
+    }
+
+    p {
+      font-weight: 500;
+    }
+  }
+
+  .no-picture::before {
+    width: 241px;
+    height: 298px;
+  }
+
+  .picture {
+    flex-direction: row;
+
+    img {
+      width: 384px;
+      height: 464px;
+    }
+
+    .image-wrapper {
+      width: 100%;
+    }
+
+    .image-wrapper::after {
+      content: none;
+    }
+  }
+}

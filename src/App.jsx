@@ -106,15 +106,20 @@ function App() {
 
         <section className="section">
           <h2>Testimonial</h2>
-          <div className="component-group">
-            <Testimonial
-              quote="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna nulla vitae laoreet augue. Amet feugiat est integer dolor auctor adipiscing nunc urna, sit."
-              name="May Andersons"
-              business="Workcation, CTO"
-            />
-          </div>
+          <div className="component-group"></div>
         </section>
       </main>
+      <Testimonial
+        quote="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna nulla vitae laoreet augue. Amet feugiat est integer dolor auctor adipiscing nunc urna, sit."
+        name="May Andersons"
+        business="Workcation, CTO"
+      />
+      <Testimonial
+        quote="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna nulla vitae laoreet augue. Amet feugiat est integer dolor auctor adipiscing nunc urna, sit."
+        name="May Andersons"
+        business="Workcation, CTO"
+        variant="picture"
+      />
     </div>
   );
 }
