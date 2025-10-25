@@ -11,7 +11,6 @@
     font-weight: 500;
     line-height: 36px;
     margin-top: 40px;
-    border: unset;
     z-index: 1;
   }
 
@@ -61,12 +60,20 @@
 
 /* Picture  */
 .picture {
-  display: flex;
-  flex-direction: column;
   position: relative;
   background-color: #2e59f3;
-  position: relative;
   padding-bottom: 64px;
+
+  .constraint-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Shared padding for picture variant */
+  h2,
+  .bio {
+    padding: 0 16px;
+  }
 
   .image-wrapper {
     padding: 0 16px;
@@ -78,7 +85,7 @@
   .copy-wrapper {
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: 24px;
   }
 
   .image-wrapper::after {
@@ -100,13 +107,10 @@
   }
 
   h2 {
-    margin-top: 24px;
-    border: unset;
     color: white;
     font-size: 24px;
     font-weight: 500;
     line-height: 32px;
-    padding: 0 16px;
   }
 
   img {
@@ -119,19 +123,19 @@
     z-index: 1;
   }
 
-  .bio {
-    padding: 0 16px;
+  /* Shared white text styling for picture variant */
+  h6,
+  p {
+    color: white;
   }
 
   h6 {
-    color: white;
     font-weight: 700;
     line-height: 24px;
     font-size: 16px;
   }
 
   p {
-    color: white;
     font-weight: 500;
     font-size: 16px;
   }
@@ -142,14 +146,12 @@
     text-align: center;
     padding: 96px 40px;
     align-items: center;
-    /* max-width: 1200px;  Not sure if we want the dots to be anchored to the text or not */
 
     h2 {
       max-width: 768px;
     }
 
     .bio {
-      margin-top: 32px;
       display: flex;
       align-items: baseline;
       justify-content: center;
@@ -174,19 +176,54 @@
   }
 
   .picture {
-    flex-direction: row;
+    padding: 96px 0;
+    display: flex;
+    justify-content: center;
+    background-color: #2e59f3;
+    position: relative;
+
+    .constraint-container {
+      flex-direction: row;
+      max-height: 400px;
+      display: flex;
+      max-width: 1200px;
+      position: relative;
+    }
+
+    svg {
+      margin-top: unset;
+    }
 
     img {
       width: 384px;
       height: 464px;
-    }
-
-    .image-wrapper {
-      width: 100%;
+      max-width: unset;
     }
 
     .image-wrapper::after {
       content: none;
     }
+
+    .copy-wrapper {
+      justify-content: center;
+    }
+  }
+
+  .picture::before {
+    content: "";
+    position: absolute;
+    height: 96px;
+    background-color: #f8f9fa;
+    top: 0;
+    width: 100%;
+  }
+
+  .picture::after {
+    content: "";
+    position: absolute;
+    height: 96px;
+    background-color: #f8f9fa;
+    bottom: 0;
+    width: 100%;
   }
 }

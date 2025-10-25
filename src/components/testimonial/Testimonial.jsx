@@ -14,19 +14,21 @@ export const Testimonial = ({
 
   return (
     <div className={testimonialClasses}>
-      <div className={styles["image-wrapper"]}>
-        {variant === "picture" ? (
-          <img src={picture} />
-        ) : (
-          <img src={WorkcationLogo} />
-        )}
-      </div>
-      {variant === "picture" && <Quote />}
-      <div className={styles["copy-wrapper"]}>
-        <h2>{quote}</h2>
-        <div className={styles.bio}>
-          <h6>{name}</h6>
-          <p>{business}</p>
+      <div className={styles["constraint-container"]}>
+        <div className={styles["image-wrapper"]}>
+          {variant === "picture" ? (
+            <img src={picture} />
+          ) : (
+            <img src={WorkcationLogo} />
+          )}
+        </div>
+        <div className={styles["copy-wrapper"]}>
+          {variant === "picture" && <Quote />}
+          <h2>{quote}</h2>
+          <div className={styles.bio}>
+            <h6>{name}</h6>
+            <p>{business}</p>
+          </div>
         </div>
       </div>
     </div>

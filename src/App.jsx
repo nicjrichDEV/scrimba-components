@@ -1,4 +1,4 @@
-import "./App.css";
+import styles from "./App.module.css";
 import { Badge } from "./components/badge/Badge";
 import { Banner } from "./components/banner/Banner";
 import { Card } from "./components/card/Card";
@@ -6,17 +6,17 @@ import { Testimonial } from "./components/testimonial/Testimonial";
 
 function App() {
   return (
-    <div className="app">
-      <header className="header">
+    <div className={styles.app}>
+      <header className={styles.header}>
         <h1>Scrimba Components</h1>
         <p>A collection of reusable UI components</p>
       </header>
 
-      <main className="main">
-        <section className="section">
+      <main className={styles.main}>
+        <section className={styles.section}>
           <h2>Badges</h2>
-          <div className="component-group">
-            <div className="badges-square">
+          <div className={styles.componentGroup}>
+            <div className={styles.badgesSquare}>
               <Badge color="red">Badge</Badge>
               <Badge color="yellow">Badge</Badge>
               <Badge color="green">Badge</Badge>
@@ -25,7 +25,7 @@ function App() {
               <Badge color="purple">Badge</Badge>
               <Badge color="pink">Badge</Badge>
             </div>
-            <div className="badges-pill">
+            <div className={styles.badgesPill}>
               <Badge color="red" shape="pill">
                 Badge
               </Badge>
@@ -51,10 +51,10 @@ function App() {
           </div>
         </section>
 
-        <section className="section">
+        <section className={styles.section}>
           <h2>Banners</h2>
-          <div className="component-group">
-            <div className="banner-multi">
+          <div className={styles.componentGroup}>
+            <div className={styles.bannerMulti}>
               <Banner
                 title="Update available"
                 description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur, ipsum similique veniam."
@@ -75,7 +75,7 @@ function App() {
                 status="error"
               />
             </div>
-            <div className="banner-multi">
+            <div className={styles.bannerMulti}>
               <Banner title="Update available" />
               <Banner title="Congratulations!" status="success" />
               <Banner title="Attention!" status="warning" />
@@ -87,10 +87,10 @@ function App() {
           </div>
         </section>
 
-        <section className="section">
+        <section className={styles.section}>
           <h2>Cards</h2>
-          <div className="component-group">
-            <div className="cards">
+          <div className={styles.componentGroup}>
+            <div className={styles.cards}>
               <Card
                 title="Easy Deployment"
                 description="Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis."
@@ -104,22 +104,23 @@ function App() {
           </div>
         </section>
 
-        <section className="section">
+        <section className={styles.section}>
           <h2>Testimonial</h2>
-          <div className="component-group"></div>
+          <div className={styles.componentGroup}>
+            <Testimonial
+              quote="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna nulla vitae laoreet augue. Amet feugiat est integer dolor auctor adipiscing nunc urna, sit."
+              name="May Andersons"
+              business="Workcation, CTO"
+            />
+            <Testimonial
+              quote="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna nulla vitae laoreet augue. Amet feugiat est integer dolor auctor adipiscing nunc urna, sit."
+              name="May Andersons"
+              business="Workcation, CTO"
+              variant="picture"
+            />
+          </div>
         </section>
       </main>
-      <Testimonial
-        quote="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna nulla vitae laoreet augue. Amet feugiat est integer dolor auctor adipiscing nunc urna, sit."
-        name="May Andersons"
-        business="Workcation, CTO"
-      />
-      <Testimonial
-        quote="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna nulla vitae laoreet augue. Amet feugiat est integer dolor auctor adipiscing nunc urna, sit."
-        name="May Andersons"
-        business="Workcation, CTO"
-        variant="picture"
-      />
     </div>
   );
 }

@@ -51,27 +51,31 @@
 }
 
 /* Component Groups */
-.component-group {
+.componentGroup {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+
+  h2 {
+    border: unset;
+  }
 }
 
 /* Badge Layouts */
-.badges-square,
-.badges-pill {
+.badgesSquare,
+.badgesPill {
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
   align-items: center;
 }
 
-.badges-square {
+.badgesSquare {
   margin-bottom: 1rem;
 }
 
 /* Banner Layouts */
-.banner-multi {
+.bannerMulti {
   display: flex;
   flex-direction: column;
   gap: 1rem;
