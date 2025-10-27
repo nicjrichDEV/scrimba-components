@@ -5,7 +5,7 @@ import { cn } from "../../utilities/cn";
 import { useGlobalTooltip } from "./hooks/useGlobalTooltip";
 
 export const TooltipTrigger = ({ children, asChild }) => {
-  const { setIsOpen, anchorName } = useTooltip();
+  const { setIsOpen, anchorName, persistent } = useTooltip();
   const { isWarmedUp, setIsWarmedUp, delay, resetTime } = useGlobalTooltip();
 
   // Refs for timers
@@ -29,16 +29,20 @@ export const TooltipTrigger = ({ children, asChild }) => {
       }
     },
     onMouseLeave: () => {
-      if (warmupTimerRef.current) {
-        clearTimeout(warmupTimerRef.current);
-        warmupTimerRef.current = null;
+      if (persistent) {
+        return;
+      } else {
+        if (warmupTimerRef.current) {
+          clearTimeout(warmupTimerRef.current);
+          warmupTimerRef.current = null;
+        }
+
+        setIsOpen(false);
+
+        cooldownTimerRef.current = setTimeout(() => {
+          setIsWarmedUp(false);
+        }, resetTime);
       }
-
-      setIsOpen(false);
-
-      cooldownTimerRef.current = setTimeout(() => {
-        setIsWarmedUp(false);
-      }, resetTime);
     },
     onFocus: () => setIsOpen(true),
     onBlur: () => setIsOpen(false),

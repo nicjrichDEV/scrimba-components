@@ -3,6 +3,7 @@ import { TooltipContext } from "./context/TooltipContext";
 import { InboxIcon } from "lucide-react";
 import styles from "./Tooltip.module.css";
 import { cn } from "../../utilities/cn";
+import { X } from "lucide-react";
 
 export const TooltipBody = ({
   title,
@@ -11,7 +12,8 @@ export const TooltipBody = ({
   variant = "bold",
   color = "neutral",
 }) => {
-  const { isOpen, anchorName } = useContext(TooltipContext);
+  const { isOpen, anchorName, persistent, setIsOpen } =
+    useContext(TooltipContext);
   const tooltipBodyClasses = cn(
     styles.tooltip,
     styles[variant],
@@ -32,6 +34,7 @@ export const TooltipBody = ({
           <h6>{title}</h6>
           <p>{description}</p>
         </div>
+        {persistent && <X onClick={() => setIsOpen(false)} />}
       </div>
     </>
   );

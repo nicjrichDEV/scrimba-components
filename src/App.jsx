@@ -168,7 +168,7 @@ function App() {
             </TooltipRoot>
           </div>
           <div className={styles.componentGroup}>
-            <TooltipRoot>
+            <TooltipRoot persistent={true}>
               <TooltipTrigger asChild>
                 <button>Test button</button>
               </TooltipTrigger>
@@ -178,7 +178,7 @@ function App() {
                 variant="light"
               />
             </TooltipRoot>
-            <TooltipRoot>
+            <TooltipRoot persistent={true}>
               <TooltipTrigger asChild>
                 <button>Test button</button>
               </TooltipTrigger>
@@ -189,7 +189,7 @@ function App() {
                 color="blue"
               />
             </TooltipRoot>
-            <TooltipRoot>
+            <TooltipRoot persistent={true}>
               <TooltipTrigger asChild>
                 <button>Test button</button>
               </TooltipTrigger>
@@ -200,7 +200,7 @@ function App() {
                 color="pink"
               />
             </TooltipRoot>
-            <TooltipRoot>
+            <TooltipRoot persistent={true}>
               <TooltipTrigger asChild>
                 <button>Test button</button>
               </TooltipTrigger>
