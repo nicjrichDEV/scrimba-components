@@ -126,12 +126,92 @@ function App() {
 
         <section className={styles.section}>
           <h2>Tooltip</h2>
-          <TooltipRoot>
-            <TooltipTrigger>
-              <button>Test button</button>
-            </TooltipTrigger>
-            <TooltipBody />
-          </TooltipRoot>
+          <div className={styles.componentGroup}>
+            <TooltipRoot>
+              <TooltipTrigger asChild>
+                <button>Test button</button>
+              </TooltipTrigger>
+              <TooltipBody
+                title="Archive Notes"
+                description="Lorem ipsum dolor sit amet consectetur adipisicing elit oluptatum tenetur."
+              />
+            </TooltipRoot>
+            <TooltipRoot>
+              <TooltipTrigger asChild>
+                <button>Test button</button>
+              </TooltipTrigger>
+              <TooltipBody
+                title="Archive Notes"
+                description="Lorem ipsum dolor sit amet consectetur adipisicing elit oluptatum tenetur."
+                color="blue"
+              />
+            </TooltipRoot>
+            <TooltipRoot>
+              <TooltipTrigger asChild>
+                <button>Test button</button>
+              </TooltipTrigger>
+              <TooltipBody
+                title="Archive Notes"
+                description="Lorem ipsum dolor sit amet consectetur adipisicing elit oluptatum tenetur."
+                color="pink"
+              />
+            </TooltipRoot>
+            <TooltipRoot>
+              <TooltipTrigger asChild>
+                <button>Test button</button>
+              </TooltipTrigger>
+              <TooltipBody
+                title="Archive Notes"
+                description="Lorem ipsum dolor sit amet consectetur adipisicing elit oluptatum tenetur."
+                color="green"
+              />
+            </TooltipRoot>
+          </div>
+          <div className={styles.componentGroup}>
+            <TooltipRoot>
+              <TooltipTrigger asChild>
+                <button>Test button</button>
+              </TooltipTrigger>
+              <TooltipBody
+                title="Archive Notes"
+                description="Lorem ipsum dolor sit amet consectetur adipisicing elit oluptatum tenetur."
+                variant="light"
+              />
+            </TooltipRoot>
+            <TooltipRoot>
+              <TooltipTrigger asChild>
+                <button>Test button</button>
+              </TooltipTrigger>
+              <TooltipBody
+                title="Archive Notes"
+                description="Lorem ipsum dolor sit amet consectetur adipisicing elit oluptatum tenetur."
+                variant="light"
+                color="blue"
+              />
+            </TooltipRoot>
+            <TooltipRoot>
+              <TooltipTrigger asChild>
+                <button>Test button</button>
+              </TooltipTrigger>
+              <TooltipBody
+                title="Archive Notes"
+                description="Lorem ipsum dolor sit amet consectetur adipisicing elit oluptatum tenetur."
+                variant="light"
+                color="pink"
+              />
+            </TooltipRoot>
+            <TooltipRoot>
+              <TooltipTrigger asChild>
+                <button>Test button</button>
+              </TooltipTrigger>
+              <TooltipBody
+                title="Archive Notes"
+                description="Lorem ipsum dolor sit amet consectetur adipisicing elit oluptatum tenetur."
+                variant="light"
+                color="green"
+              />
+            </TooltipRoot>
+          </div>
         </section>
       </main>
     </div>

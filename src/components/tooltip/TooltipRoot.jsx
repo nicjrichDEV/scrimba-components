@@ -1,12 +1,15 @@
-import { useState } from "react";
-import { TooltipContext } from "./TooltipContext";
+import { useState, useId } from "react";
+import { TooltipContext } from "./context/TooltipContext";
 
 export const TooltipRoot = ({ children }) => {
   const [isOpen, setIsOpen] = useState(false);
+  const anchorId = useId();
+  const anchorName = `--tooltip-${anchorId.replace(/:/g, "-")}`;
 
   const contextValues = {
     isOpen,
     setIsOpen,
+    anchorName,
   };
 
   return (

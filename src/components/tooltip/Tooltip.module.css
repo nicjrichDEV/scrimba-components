@@ -1,0 +1,138 @@
+.tooltip {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+  position: absolute;
+  display: flex;
+  padding: 16px;
+  align-items: flex-start;
+  gap: 16px;
+  border-radius: 8px;
+  max-width: 384px;
+  position-area: start end;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.tooltip.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.bold {
+  h6 {
+    color: white;
+  }
+}
+
+.bold.neutral {
+  background-color: #262626;
+
+  p {
+    color: #c7c7c7;
+  }
+
+  svg {
+    stroke: #c7c7c7;
+  }
+}
+
+.bold.blue {
+  background-color: #1e40af;
+
+  p {
+    color: #e8edff;
+  }
+
+  svg {
+    stroke: #7ea6f2;
+  }
+}
+
+.bold.pink {
+  background-color: #a9229b;
+
+  p {
+    color: #ffe9fd;
+  }
+
+  svg {
+    stroke: #f462e6;
+  }
+}
+
+.bold.green {
+  background-color: #47aa5d;
+
+  p {
+    color: #e3ffe9;
+  }
+
+  svg {
+    stroke: #c1ffcf;
+  }
+}
+
+.light.neutral {
+  background-color: #ffffff;
+
+  h6 {
+    color: #111827;
+  }
+
+  p {
+    color: #6b7280;
+  }
+
+  svg {
+    stroke: #6b7280;
+  }
+}
+
+.light.blue {
+  background-color: #e0e7ff;
+
+  h6 {
+    color: #1e40af;
+  }
+
+  p {
+    color: #1c51b9;
+  }
+
+  svg {
+    stroke: #1c51b9;
+  }
+}
+
+.light.pink {
+  background-color: #fff3fc;
+
+  h6 {
+    color: #a9229b;
+  }
+
+  p {
+    color: #c7369e;
+  }
+
+  svg {
+    stroke: #c7369e;
+  }
+}
+
+.light.green {
+  background: #e7fff3;
+
+  h6 {
+    color: #137a2a;
+  }
+
+  p {
+    color: #3c8c4e;
+  }
+
+  svg {
+    stroke: #41a557;
+  }
+}
