@@ -1,4 +1,4 @@
-import { useTooltip } from "./TooltipRoot";
+import { useTooltip } from "./useTooltip";
 import { cloneElement } from "react";
 
 export const TooltipTrigger = ({ children, asChild }) => {

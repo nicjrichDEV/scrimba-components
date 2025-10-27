@@ -3,6 +3,9 @@ import { Badge } from "./components/badge/Badge";
 import { Banner } from "./components/banner/Banner";
 import { Card } from "./components/card/Card";
 import { Testimonial } from "./components/testimonial/Testimonial";
+import { TooltipBody } from "./components/tooltip/TooltipBody";
+import { TooltipRoot } from "./components/tooltip/TooltipRoot";
+import { TooltipTrigger } from "./components/tooltip/TooltipTrigger";
 
 function App() {
   return (
@@ -119,6 +122,16 @@ function App() {
               variant="picture"
             />
           </div>
+        </section>
+
+        <section className={styles.section}>
+          <h2>Tooltip</h2>
+          <TooltipRoot>
+            <TooltipTrigger>
+              <button>Test button</button>
+            </TooltipTrigger>
+            <TooltipBody />
+          </TooltipRoot>
         </section>
       </main>
     </div>
