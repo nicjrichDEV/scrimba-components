@@ -29,12 +29,16 @@ export const TooltipBody = ({
           positionAnchor: anchorName,
         }}
       >
-        {icon && <InboxIcon />}
+        {icon && <InboxIcon size="32px" />}
         <div>
           <h6>{title}</h6>
           <p>{description}</p>
         </div>
-        {persistent && <X onClick={() => setIsOpen(false)} />}
+        {persistent && (
+          <button onClick={() => setIsOpen(false)}>
+            <X size="32px" />
+          </button>
+        )}
       </div>
     </>
   );

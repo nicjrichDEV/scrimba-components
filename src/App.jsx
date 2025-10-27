@@ -1,3 +1,4 @@
+import { InfoIcon } from "lucide-react";
 import styles from "./App.module.css";
 import { Badge } from "./components/badge/Badge";
 import { Banner } from "./components/banner/Banner";
@@ -129,7 +130,7 @@ function App() {
           <div className={styles.componentGroup}>
             <TooltipRoot>
               <TooltipTrigger asChild>
-                <button>Test button</button>
+                <InfoIcon />
               </TooltipTrigger>
               <TooltipBody
                 title="Archive Notes"
@@ -138,7 +139,7 @@ function App() {
             </TooltipRoot>
             <TooltipRoot>
               <TooltipTrigger asChild>
-                <button>Test button</button>
+                <InfoIcon />
               </TooltipTrigger>
               <TooltipBody
                 title="Archive Notes"
@@ -148,7 +149,7 @@ function App() {
             </TooltipRoot>
             <TooltipRoot>
               <TooltipTrigger asChild>
-                <button>Test button</button>
+                <InfoIcon />
               </TooltipTrigger>
               <TooltipBody
                 title="Archive Notes"
@@ -158,7 +159,7 @@ function App() {
             </TooltipRoot>
             <TooltipRoot>
               <TooltipTrigger asChild>
-                <button>Test button</button>
+                <InfoIcon />
               </TooltipTrigger>
               <TooltipBody
                 title="Archive Notes"
@@ -170,7 +171,7 @@ function App() {
           <div className={styles.componentGroup}>
             <TooltipRoot persistent={true}>
               <TooltipTrigger asChild>
-                <button>Test button</button>
+                <InfoIcon />
               </TooltipTrigger>
               <TooltipBody
                 title="Archive Notes"
@@ -180,7 +181,7 @@ function App() {
             </TooltipRoot>
             <TooltipRoot persistent={true}>
               <TooltipTrigger asChild>
-                <button>Test button</button>
+                <InfoIcon />
               </TooltipTrigger>
               <TooltipBody
                 title="Archive Notes"
@@ -191,7 +192,7 @@ function App() {
             </TooltipRoot>
             <TooltipRoot persistent={true}>
               <TooltipTrigger asChild>
-                <button>Test button</button>
+                <InfoIcon />
               </TooltipTrigger>
               <TooltipBody
                 title="Archive Notes"
@@ -202,7 +203,7 @@ function App() {
             </TooltipRoot>
             <TooltipRoot persistent={true}>
               <TooltipTrigger asChild>
-                <button>Test button</button>
+                <InfoIcon />
               </TooltipTrigger>
               <TooltipBody
                 title="Archive Notes"
