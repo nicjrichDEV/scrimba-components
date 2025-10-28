@@ -140,3 +140,10 @@
     stroke: #41a557;
   }
 }
+
+/* Mobile responsiveness for tooltips */
+@media (max-width: 480px) {
+  .tooltip {
+    max-width: calc(100% - 32px);
+  }
+}

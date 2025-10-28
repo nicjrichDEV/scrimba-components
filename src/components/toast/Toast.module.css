@@ -30,6 +30,15 @@
   }
 }
 
+/* Mobile responsiveness for toast */
+@media (max-width: 480px) {
+  .toast {
+    max-width: calc(100% - 48px);
+    bottom: 12px;
+    right: 24px;
+  }
+}
+
 /* This really needs some work */
 @keyframes slideIn {
   from {
