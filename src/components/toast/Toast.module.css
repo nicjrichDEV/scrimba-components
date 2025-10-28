@@ -11,8 +11,26 @@
     0 4px 6px -2px rgba(0, 0, 0, 0.05);
   animation: slideIn 0.3s ease-out;
   z-index: 9999;
+
+  h6 {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0 0 4px 0;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  /* Probably can be removed by setting the sizes on the icons themselves */
+  svg {
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+  }
 }
 
+/* This really needs some work */
 @keyframes slideIn {
   from {
     transform: translateX(100%);
@@ -24,91 +42,70 @@
   }
 }
 
-.toast h6 {
-  font-size: 14px;
-  font-weight: 600;
-  margin: 0 0 4px 0;
-}
-
-.toast p {
-  font-size: 14px;
-  margin: 0;
-}
-
-.toast svg {
-  flex-shrink: 0;
-  width: 20px;
-  height: 20px;
-}
-
 /* Success variant */
 .toast.success {
   background-color: #d1fae5;
-  color: #065f46;
-}
 
-.toast.success svg {
-  stroke: #10b981;
-}
+  h6 {
+    color: #065f46;
+  }
 
-.toast.success h6 {
-  color: #065f46;
-}
+  p {
+    color: #047857;
+  }
 
-.toast.success p {
-  color: #047857;
+  svg {
+    stroke: #10b981;
+  }
 }
 
 /* Warning variant */
 .toast.warning {
   background-color: #fef3c7;
-  color: #92400e;
-}
 
-.toast.warning svg {
-  stroke: #f59e0b;
-}
+  h6 {
+    color: #92400e;
+  }
 
-.toast.warning h6 {
-  color: #92400e;
-}
+  p {
+    color: #b45309;
+  }
 
-.toast.warning p {
-  color: #b45309;
+  svg {
+    stroke: #f59e0b;
+  }
 }
 
 /* Info variant */
 .toast.info {
   background-color: #dbeafe;
-  color: #1e40af;
-}
 
-.toast.info svg {
-  stroke: #3b82f6;
-}
+  h6 {
+    color: #1e40af;
+  }
 
-.toast.info h6 {
-  color: #1e40af;
-}
+  p {
+    color: #2563eb;
+  }
 
-.toast.info p {
-  color: #2563eb;
+  svg {
+    stroke: #3b82f6;
+  }
 }
 
 /* Error variant */
 .toast.error {
   background-color: #fee2e2;
-  color: #991b1b;
-}
 
-.toast.error svg {
-  stroke: #ef4444;
-}
+  h6 {
+    color: #991b1b;
+  }
 
-.toast.error h6 {
-  color: #991b1b;
-}
+  p {
+    color: #dc2626;
+  }
 
-.toast.error p {
-  color: #dc2626;
+  svg {
+    stroke: #ef4444;
+  }
 }
