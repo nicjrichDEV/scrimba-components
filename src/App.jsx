@@ -7,6 +7,9 @@ import { Testimonial } from "./components/testimonial/Testimonial";
 import { TooltipBody } from "./components/tooltip/TooltipBody";
 import { TooltipRoot } from "./components/tooltip/TooltipRoot";
 import { TooltipTrigger } from "./components/tooltip/TooltipTrigger";
+import { ToastRoot } from "./components/toast/ToastRoot";
+import { ToastTrigger } from "./components/toast/ToastTrigger";
+import { ToastBody } from "./components/toast/ToastBody";
 
 function App() {
   return (
@@ -212,6 +215,30 @@ function App() {
                 color="green"
               />
             </TooltipRoot>
+          </div>
+        </section>
+
+        <section className={styles.section}>
+          <h2>Toast</h2>
+          <div className={styles.componentGroup}>
+            <ToastRoot>
+              <ToastTrigger asChild>
+                <button>Create Toast</button>
+              </ToastTrigger>
+              <ToastBody title="Testing" description="testing"></ToastBody>
+            </ToastRoot>
+            <ToastRoot>
+              <ToastTrigger asChild>
+                <button>Create Toast</button>
+              </ToastTrigger>
+              <ToastBody title="Testing" description="testing"></ToastBody>
+            </ToastRoot>
+            <ToastRoot>
+              <ToastTrigger asChild>
+                <button>Create Toast</button>
+              </ToastTrigger>
+              <ToastBody title="Testing" description="testing"></ToastBody>
+            </ToastRoot>
           </div>
         </section>
       </main>
