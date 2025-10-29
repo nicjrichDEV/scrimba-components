@@ -66,11 +66,88 @@ svg {
 
 /* Root Variables */
 :root {
-  color: #212529;
-  background-color: #f8f9fa;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  /* ===== UNSC steel neutrals ===== */
+  --halo-neutral-50:  #f5f5f4;
+  --halo-neutral-100: #e7e8e7;
+  --halo-neutral-200: #d5d6d5;
+  --halo-neutral-300: #c0c1c0;
+  --halo-neutral-400: #abacab;
+  --halo-neutral-500: #7c7e7b;
+  --halo-neutral-600: #6d6f6c;
+  --halo-neutral-700: #5e605d;
+  --halo-neutral-800: #4f514f;
+  --halo-neutral-900: #3c3c3b;
+  --halo-neutral-950: #2d2d2c;
+
+  /* ===== SUCCESS — Master Chief olive ===== */
+  --halo-success-50:  #f1f5ee;
+  --halo-success-100: #e0e8d9;
+  --halo-success-200: #c7d5bb;
+  --halo-success-300: #abc199;
+  --halo-success-400: #8fac77;
+  --halo-success-500: #507d2a;
+  --halo-success-600: #466e25;
+  --halo-success-700: #3d5f20;
+  --halo-success-800: #33501b;
+  --halo-success-900: #263c14;
+  --halo-success-950: #1d2d0f;
+
+  /* ===== ERROR — Covenant/Crimson red ===== */
+  --halo-error-50:  #f7efef;
+  --halo-error-100: #eddada;
+  --halo-error-200: #dfbebd;
+  --halo-error-300: #cf9d9d;
+  --halo-error-400: #bf7c7c;
+  --halo-error-500: #9b3332;
+  --halo-error-600: #882d2c;
+  --halo-error-700: #762726;
+  --halo-error-800: #632120;
+  --halo-error-900: #4a1818;
+  --halo-error-950: #381212;
+
+  /* ===== WARNING — UNSC hazard yellow ===== */
+  --halo-warning-50:  #fefaee;
+  --halo-warning-100: #fdf3d9;
+  --halo-warning-200: #fbeabb;
+  --halo-warning-300: #f9df99;
+  --halo-warning-400: #f7d477;
+  --halo-warning-500: #f3bc2b;
+  --halo-warning-600: #d6a526;
+  --halo-warning-700: #b98f21;
+  --halo-warning-800: #9c781c;
+  --halo-warning-900: #755a15;
+  --halo-warning-950: #57440f;
+
+  /* ===== ORANGE (vibrant accent) — Promethean-leaning ===== */
+  --halo-orange-vibrant-50:  #fff5eb;
+  --halo-orange-vibrant-100: #ffe8d1;
+  --halo-orange-vibrant-200: #ffd6ad;
+  --halo-orange-vibrant-300: #ffc285;
+  --halo-orange-vibrant-400: #ffad5c;
+  --halo-orange-vibrant-500: #ff7f00;
+  --halo-orange-vibrant-600: #e07000;
+  --halo-orange-vibrant-700: #c26100;
+  --halo-orange-vibrant-800: #a35100;
+  --halo-orange-vibrant-900: #7a3d00;
+  --halo-orange-vibrant-950: #5c2e00;
+
+  /* ===== INFO — Cortana/UNSC UI blue ===== */
+  /* Base (500) anchored to a commonly referenced Cortana blue. */
+  --halo-info-50:  #edf8ff;
+  --halo-info-100: #d6effd;
+  --halo-info-200: #b8e4fa;
+  --halo-info-300: #8fd3f5;
+  --halo-info-400: #5cc0ef;
+  --halo-info-500: #1c9fe7; /* base */
+  --halo-info-600: #178ecc;
+  --halo-info-700: #137cb3;
+  --halo-info-800: #0f6a99;
+  --halo-info-900: #0a4c70;
+  --halo-info-950: #073854;
 }
+
